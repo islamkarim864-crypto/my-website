@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* BACKGROUND IMAGE */
+  background: url("bg.jpg") no-repeat center center/cover;
+}
+
+/* dark blur overlay */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* main card */
+.card {
+  position: relative;
+  z-index: 2;
+
+  padding: 40px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+
+  color: white;
+  text-align: center;
+
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.apps {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.apps a {
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.apps a:hover {
+  transform: scale(1.1);
+  background: rgba(255,255,255,0.25);
+}
+
+
+.apps a {
+  padding: 15px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Discord (muted blue) */
+.apps a:nth-child(1) {
+  background: #3b4370;
+}
+
+/* Spotify (dark green soft) */
+.apps a:nth-child(2) {
+  background: #1f6b3a;
+}
+
+/* Instagram (soft gradient dark) */
+.apps a:nth-child(3) {
+  background: linear-gradient(45deg, #5c4a2a, #5a1f3a, #3b1f5a);
+}
+
+/* Steam (dark muted) */
+.apps a:nth-child(4) {
+  background: #1a1f2b;
+}
+}
